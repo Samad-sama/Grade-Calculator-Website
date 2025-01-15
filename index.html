@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M2 AI&DS Grades Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>M2 AI&DS Grades Calculator</h1>
+        
+        <table id="gradesTable" class="gradeTable">
+            <thead>
+                <tr>
+                    <th>Module</th>
+                    <th>TD</th>
+                    <th>TP</th>
+                    <th>Exam</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr data-type="1">
+                    <td data-full-name="Machine Learning 2">ML2</td>
+                    <td><input type="number" class="td-score" min="0" max="20" step="0.25"></td>
+                    <td><input type="number" class="tp-score" min="0" max="20" step="0.25"></td>
+                    <td><input type="number" class="exam-score" min="0" max="20" step="0.25"></td>
+                    <td class="module-grade">-</td>
+                </tr>
+                <tr data-type="1">
+                    <td data-full-name="Deep Learning">DL</td>
+                    <td><input type="number" class="td-score" min="0" max="20" step="0.25"></td>
+                    <td><input type="number" class="tp-score" min="0" max="20" step="0.25"></td>
+                    <td><input type="number" class="exam-score" min="0" max="20" step="0.25"></td>
+                    <td class="module-grade">-</td>
+                </tr>
+                <tr data-type="1">
+                    <td data-full-name="Machine Learning Applications">MLA</td>
+                    <td><input type="number" class="td-score" min="0" max="20" step="0.25"></td>
+                    <td><input type="number" class="tp-score" min="0" max="20" step="0.25"></td>
+                    <td><input type="number" class="exam-score" min="0" max="20" step="0.25"></td>
+                    <td class="module-grade">-</td>
+                </tr>
+                <tr data-type="2">
+                    <td data-full-name="Natural Language Processing">NLP</td>
+                    <td><input type="number" class="td-score" min="0" max="20" step="0.25"></td>
+                    <td class="disabled">-</td>
+                    <td><input type="number" class="exam-score" min="0" max="20" step="0.25"></td>
+                    <td class="module-grade">-</td>
+                </tr>
+                <tr data-type="3">
+                    <td data-full-name="English">Eng</td>
+                    <td class="disabled">-</td>
+                    <td class="disabled">-</td>
+                    <td><input type="number" class="exam-score" min="0" max="20" step="0.25"></td>
+                    <td class="module-grade">-</td>
+                </tr>
+                <tr data-type="3">
+                    <td data-full-name="Enterprise">Ent</td>
+                    <td class="disabled">-</td>
+                    <td class="disabled">-</td>
+                    <td><input type="number" class="exam-score" min="0" max="20" step="0.25"></td>
+                    <td class="module-grade">-</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button id="calculate">Calculate Average</button>
+
+        <div id="result">
+            <h2>Results:</h2>
+            <p>Total Average: <span id="gpa">0.00</span>/20</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
